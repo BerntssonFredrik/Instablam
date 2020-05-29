@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+    font-family: "DM Mono", monospace;
+}
+
+.bright,
+.hue,
+.exp,
+.sat,
+.sep {
+    display: flex;
+    width: 20rem;
+    justify-content: space-around;
+}
+
+.brightness,
+.Hue,
+.exposure,
+.saturation,
+.sepia {
+    margin: 0.2rem 0;
+}
+
+.wrapper {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    max-width: 100vw;
+}
+
+.takePic {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0 2rem;
+}
+
+.camera {
+    max-width: 80vw;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+
+#photo {
+    max-width: 80vw;
+    /* height: 200px; */
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    margin: 0.5rem;
+    font-size: 1rem;
+    font-weight: 900;
+    padding: 0.5rem;
+    border-radius: 6px;
+    background: #415a77;
+    color: white;
+    text-align: center;
+}
+
+#revert,
+#save {
+    display: none;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 70%;
+    height: 15px;
+    border-radius: 5px;
+    background: #415a77;
+    outline: none;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+}
+
+.frame {
+    display: none;
+    background-color: #ddc;
+    border: solid 5vmin #eee;
+    border-bottom-color: #fff;
+    border-left-color: #eee;
+    border-radius: 2px;
+    border-right-color: #eee;
+    border-top-color: #ddd;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset, 0 5px 10px 5px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    margin: 1rem;
+    height: min-content;
+    position: relative;
+    text-align: center;
+}
+
+.frame:before {
+    border-radius: 2px;
+    bottom: -2vmin;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset;
+    content: "";
+    left: -2vmin;
+    position: absolute;
+    right: -2vmin;
+    top: -2vmin;
+}
+
+.frame:after {
+    border-radius: 2px;
+    bottom: -2.5vmin;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    content: "";
+    left: -2.5vmin;
+    position: absolute;
+    right: -2.5vmin;
+    top: -2.5vmin;
+}
+
+@media only screen and (max-width: 700px) {
+    canvas {
+        max-width: 80vw !important;
+        max-height: 30vh !important;
+    }
+}

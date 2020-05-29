@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap" rel="stylesheet" />
+
+    <title>Instablam</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main>
+            <section class="takePic">
+                <video id="camera" class="camera"></video>
+                <button id="takePic" class="btn">Take picture</button>
+                <div class="frame" id="frame">
+                    <img src="" id="photo" alt="" data-caman-hidpi-disabled="true" />
+                </div>
+                <div class="buttons">
+                    <button id="revert" class="btn">Revert settings</button>
+                    <button a-href="#photo" id="save" class="btn">Save image</button>
+                </div>
+            </section>
+            <section class="inputs" id="inputs">
+                <h1>Change settings</h1>
+                <button id="reset" class="btn">Reset settings</button>
+
+                <section class="brightness">
+                    <h3>Brightness</h3>
+                    <div class="bright">
+                        <p>Value: <span id="value1"></span></p>
+                        <input type="range" min="-20" max="20" id="range1" class="slider" />
+                    </div>
+                </section>
+
+                <section class="Hue">
+                    <h3>Hue</h3>
+                    <div class="hue">
+                        <p>Value: <span id="value2"></span></p>
+                        <input type="range" min="0" max="100" value="0" id="range2" class="slider" />
+                    </div>
+                </section>
+
+                <section class="exposure">
+                    <h3>Exposure</h3>
+                    <div class="exp">
+                        <p>Value: <span id="value3"></span></p>
+                        <input type="range" min="-20" max="20" value="0" id="range3" class="slider" />
+                    </div>
+                </section>
+
+                <section class="saturation">
+                    <h3>Saturation</h3>
+                    <div class="sat">
+                        <p>Value: <span id="value4"></span></p>
+                        <input type="range" min="-100" max="100" value="0" id="range4" class="slider" />
+                    </div>
+                </section>
+
+                <section class="sepia">
+                    <h3>Sepia</h3>
+                    <div class="sep">
+                        <p>Value: <span id="value5"></span></p>
+                        <input type="range" min="0" max="100" value="0" id="range5" class="slider" />
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/caman.full.min.js"></script>
+</body>
+
+</html>

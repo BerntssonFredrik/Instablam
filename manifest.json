@@ -1,0 +1,24 @@
+{
+    "name": "Instablam",
+    "short_name": "Instablam",
+    "start_url": "/",
+    "background_color": "#fef6e8",
+    "theme_color": "#660200",
+    "orientation": "any",
+    "display": "standalone",
+    "dir": "ltr",
+    "lang": "en-US",
+    "description": "Photo app",
+    "scope": "/",
+    "icons": [{
+            "src": "img/iconx192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "img/iconx512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
